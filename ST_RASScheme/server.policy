@@ -1,0 +1,6 @@
+grant codeBase "file:/home/loleasch/Documents/Dropbox/Thesis/Middleware/SW/ST_RASScheme/src/" {
+	permission java.util.PropertyPermission "*", "read,write";
+    permission java.security.AllPermission;
+    permission java.security.AllPermission;
+	permission java.io.FilePermission "<<ALL FILES>>", "read";
+};

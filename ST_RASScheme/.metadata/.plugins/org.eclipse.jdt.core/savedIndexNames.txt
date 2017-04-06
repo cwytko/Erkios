@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+/Users/Alex/Dropbox/Documents/Erkios/Erkios/ST_RASScheme/.metadata/.plugins/org.eclipse.jdt.core
+1256880449.index
+2853993542.index
+1641037546.index

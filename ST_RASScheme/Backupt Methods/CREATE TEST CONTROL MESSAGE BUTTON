@@ -1,0 +1,32 @@
+CREATE TEST CONTROL MESSAGE BUTTON
+try {
+				/*RAS TEST*/
+				List<Object[]> rasTestData = (List<Object[]>)(Object)stubDBRAS.getStubDBRAS().selectGenericQuery(queryDBRASTest, rasTest().getIdRASTest());
+				String []columns = {"RAS Test","RAS Classifications","Type RAS","Result Test","Begin Test","End Test","Comment"};
+				DefaultTableModel dtableResultRASTest = new DefaultTableModel(columns, 0);
+				//System.out.println(resultRASTest.getClass().getName());
+				for(Object[] data: rasTestData)
+					dtableResultRASTest.addRow(data);
+				tblRASTest.setModel(dtableResultRASTest);
+				spaRASTest.setViewportView(tblRASTest);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				JOptionPane.showMessageDialog(frmST_RAS, "Error displaying RAS Test table");
+			}
+
+			try {
+				/*ST CODE*/
+				resultdata = (List<Object[]>)(Object)stubDBRAS.getStubDBRAS().selectGenericQuery(queryDBSTCodes, getTestCtrlSignal().getRasTest().getIdRASTest());
+				String []columnsSTCode = {"Id Code","RAS Test","Name Code","Name Component","Type Action","Create Message", "Disable/Enable Sensor",
+						"Disable/Enable Actuator","Power","Current","Voltage","Frequency","Reactive Power","Phase Voltage","Parameter Error","CodeWord Error"};
+				DefaultTableModel dtableResultSTCode = new DefaultTableModel(columnsSTCode, 0);
+				
+				for(Object[] data: resultdata)
+					dtableResultSTCode.addRow(data);
+				tblSTCode.setModel(dtableResultSTCode);
+				spaSTCode.setViewportView(tblSTCode);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				JOptionPane.showMessageDialog(frmST_RAS, "Error displaying ST Code table");
+				e.printStackTrace();
+			}

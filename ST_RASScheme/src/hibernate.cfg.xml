@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/ST_RASScheme</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">L/Rsg60sfdQ8eeekS9So502a3mZ+rMw0xVutslxnbmk=</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">validate</property>
+
+		<mapping class="ras.data.ST_rasSchemes"></mapping>
+		<mapping class="ras.data.ST_classRAS"></mapping>
+		<mapping class="ras.data.ST_componentsEES"></mapping>
+		<mapping class="ras.data.ST_contingencies"></mapping>
+		<mapping class="ras.data.ST_directionLink"></mapping>
+		<mapping class="ras.data.ST_linkEES"></mapping>
+		<mapping class="ras.data.ST_tripCommand"></mapping>
+		<mapping class="ras.data.ST_typeSignal"></mapping>
+		<mapping class="ras.data.ST_parameters"></mapping>
+		<mapping class="ras.data.ST_parametersRAS"></mapping>
+		<mapping class="ras.data.ST_remedialActions"></mapping>
+		<mapping class="ras.data.ST_RASTest"></mapping>
+		<mapping class="ras.data.ST_RASTestTripCommand"></mapping>
+		<mapping class="ras.data.ST_RASTestRemedialActions"></mapping>
+		<mapping class="ras.data.ST_RASTestContingencies"></mapping>
+		<mapping class="ras.data.ST_RASTestDisableEnableComponent"></mapping>
+		<mapping class="ras.data.ST_RASTestLink"></mapping>
+		<mapping class="ras.data.ST_RASTestSTCode"></mapping>
+		<mapping class="ras.data.ST_RASTestSTCodeContingency"></mapping>
+		<mapping class="ras.data.ST_STCode"></mapping>
+		<mapping class="ras.data.ST_disableEnableAction"></mapping>
+		<mapping class="ras.data.ST_typeAction"></mapping>
+	</session-factory>
+</hibernate-configuration>

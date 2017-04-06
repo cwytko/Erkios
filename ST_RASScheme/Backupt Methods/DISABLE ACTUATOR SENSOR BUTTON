@@ -1,0 +1,69 @@
+DISABLE ACTUATOR SENSOR BUTTON
+try {
+							@SuppressWarnings("unchecked")
+							/*STATUS COMPONENTS*/
+							List<Object[]> resultStatusComponent = (List<Object[]>)(Object)stubDBRAS.getStubDBRAS().selectGenericQuery(queryDBStatusComponents, getTestCtrlSignal().getRasTest().getIdRASTest());
+							String []columns = {"Name RAS","Type Action","Enable/Disable Actuator","dateTime Actuator",
+									"Enable/Disable Sensor","dateTime Sensor","Result Enable/Disable","Comment"};
+							DefaultTableModel dtableStatusComponent = new DefaultTableModel(columns, 0);
+							
+							for(Object[] data: resultStatusComponent)
+								dtableStatusComponent.addRow(data);
+							tblStatusComponents.setModel(dtableStatusComponent);
+							spaStatusComponents.setViewportView(tblStatusComponents);
+						} catch (RemoteException e) {
+							// TODO Auto-generated catch block
+							JOptionPane.showMessageDialog(frmST_RAS, "Error displaying RAS Test table");
+						}
+						
+						try {
+							/*LINKS*/
+							@SuppressWarnings("unchecked")
+							List<Object[]> resultdata = (List<Object[]>)(Object)stubDBRAS.getStubDBRAS().selectGenericQuery(queryDBLinks, getTestCtrlSignal().getRasTest().getIdRASTest());
+							String []columnsLinks = {"Id Link","Source","Destination","Type Action","Result Link","State Component","Comment"};
+							DefaultTableModel dtableResultLinks = new DefaultTableModel(columnsLinks, 0);
+							
+							for(Object[] data: resultdata)
+								dtableResultLinks.addRow(data);
+							tblLinks.setModel(dtableResultLinks);
+							spaLinks.setViewportView(tblLinks);
+						} catch (RemoteException e) {
+							// TODO Auto-generated catch block
+							JOptionPane.showMessageDialog(frmST_RAS, "Error displaying Links table");
+							e.printStackTrace();
+						}
+						
+						try {
+							/*ST CODE*/
+							@SuppressWarnings("unchecked")
+							List<Object[]> resultdata = (List<Object[]>)(Object)stubDBRAS.getStubDBRAS().selectGenericQuery(queryDBSTCodes, getTestCtrlSignal().getRasTest().getIdRASTest());
+							String []columnsSTCode = {"Id Code","RAS Test","Name Code","Name Component","Type Action","Create Message","Disable/Enable Sensor",
+									"Disable/Enable Actuator","Power","Current","Voltage","Frequency","Reactive Power","Phase Voltage","Parameter Error","CodeWord Error"};
+							DefaultTableModel dtableResultSTCode = new DefaultTableModel(columnsSTCode, 0);
+							
+							for(Object[] data: resultdata)
+								dtableResultSTCode.addRow(data);
+							tblSTCode.setModel(dtableResultSTCode);
+							spaSTCode.setViewportView(tblSTCode);
+						} catch (RemoteException e) {
+							// TODO Auto-generated catch block
+							JOptionPane.showMessageDialog(frmST_RAS, "Error displaying ST Code table");
+							e.printStackTrace();
+						}
+
+NULL DISABLE ACTUATOR SENSOR BUTTON
+try {
+				/*LINKS*/
+				resultdata = (List<Object[]>)(Object)stubDBRAS.getStubDBRAS().selectGenericQuery(queryDBLinks, getTestCtrlSignal().getRasTest().getIdRASTest());
+				String []columnsLinks = {"Id Link","Source","Destination","Type Action","Result Link","State Component","Comment"};
+				DefaultTableModel dtableResultLinks = new DefaultTableModel(columnsLinks, 0);
+				
+				for(Object[] data: resultdata)
+					dtableResultLinks.addRow(data);
+				tblLinks.setModel(dtableResultLinks);
+				spaLinks.setViewportView(tblLinks);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				JOptionPane.showMessageDialog(frmST_RAS, "Error displaying Links table");
+				e.printStackTrace();
+			}

@@ -1,0 +1,12 @@
+2016-05-27 10:00:32,260 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-05-27 10:02:26,764 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @233140ms
+2016-05-27 10:02:26,890 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-05-27 10:02:26,938 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@37f9bff5{/help,null,AVAILABLE}
+2016-05-27 10:02:26,950 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@652937b1{HTTP/1.1}{127.0.0.1:58811}
+2016-05-27 10:02:26,951 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @233328ms
+2016-05-27 10:02:27,708 [qtp2145139316-107] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@1a0547db[p=1,l=179,c=8192,r=178]={\x16<<<\x03\x01\x00\xAe\x01\x00\x00\xAa\x03\x03S\t\x9b\xF6\x13P\xAe...\x02\x01\x00\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-05-27 10:02:27,711 [qtp2145139316-107] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@2ff824ba{r=0,c=false,a=IDLE,uri=-}
+2016-05-27 10:02:27,718 [qtp2145139316-109] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@355302d5[p=1,l=142,c=8192,r=141]={\x16<<<\x03\x01\x00\x89\x01\x00\x00\x85\x03\x02n5;\x89N:\x80...\x02\x01\x00\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-05-27 10:02:27,721 [qtp2145139316-109] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@3b94ea0f{r=0,c=false,a=IDLE,uri=-}
+2016-05-27 10:09:49,228 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@652937b1{HTTP/1.1}{127.0.0.1:0}
+2016-05-27 10:09:49,248 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@37f9bff5{/help,null,UNAVAILABLE}

@@ -1,0 +1,25 @@
+2016-03-23 13:11:14,343 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1932980ms
+2016-03-23 13:11:14,577 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-03-23 13:11:14,626 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@cbc8086{/help,null,AVAILABLE}
+2016-03-23 13:11:14,636 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6a6f0807{HTTP/1.1}{127.0.0.1:53243}
+2016-03-23 13:11:14,636 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1933292ms
+2016-03-23 13:11:15,058 [qtp946443313-86] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@516ba0b6[p=1,l=181,c=8192,r=180]={\x16<<<\x03\x01\x00\xB0\x01\x00\x00\xAc\x03\x03\xBa\xCb\xE59u\xDez...\x0b\x00\x02\x01\x00\x00\n\x00\x06\x00\x04\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-03-23 13:11:15,061 [qtp946443313-86] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@2dfc4e1f{r=0,c=false,a=IDLE,uri=-}
+2016-03-23 13:11:15,065 [qtp946443313-88] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@48aa0599[p=1,l=140,c=8192,r=139]={\x16<<<\x03\x01\x00\x87\x01\x00\x00\x83\x03\x02\x02\\'\x9c,nZ...\x0b\x00\x02\x01\x00\x00\n\x00\x06\x00\x04\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-03-23 13:11:15,066 [qtp946443313-88] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@466df2fc{r=0,c=false,a=IDLE,uri=-}
+2016-03-23 13:11:15,068 [qtp946443313-92] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@48aa0599[p=1,l=140,c=8192,r=139]={\x16<<<\x03\x01\x00\x87\x01\x00\x00\x83\x03\x01\x06\xFd\xB2E\xC6|\x95...\x0b\x00\x02\x01\x00\x00\n\x00\x06\x00\x04\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-03-23 13:11:15,068 [qtp946443313-92] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@7367f20a{r=0,c=false,a=IDLE,uri=-}
+2016-03-23 13:16:00,640 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@6a6f0807{HTTP/1.1}{127.0.0.1:0}
+2016-03-23 13:16:00,688 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@cbc8086{/help,null,UNAVAILABLE}
+2016-05-27 09:49:27,576 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2016-05-27 09:55:54,255 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @84589ms
+2016-05-27 09:55:54,389 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-05-27 09:55:54,439 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6f566cdc{/help,null,AVAILABLE}
+2016-05-27 09:55:54,451 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4a8486c3{HTTP/1.1}{127.0.0.1:50130}
+2016-05-27 09:55:54,451 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @84788ms
+2016-05-27 09:55:55,111 [qtp593579874-61] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@1116773[p=1,l=179,c=8192,r=178]={\x16<<<\x03\x01\x00\xAe\x01\x00\x00\xAa\x03\x03\xE4\xEf\t\x00\xB1\xE4\x9b...\x02\x01\x00\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-05-27 09:55:55,113 [qtp593579874-61] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@7fbd82e9{r=0,c=false,a=IDLE,uri=-}
+2016-05-27 09:55:55,118 [qtp593579874-63] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@791312f[p=1,l=142,c=8192,r=141]={\x16<<<\x03\x01\x00\x89\x01\x00\x00\x85\x03\x02k\xA1\xDc\x0b\x1a]\xBd...\x02\x01\x00\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-05-27 09:55:55,119 [qtp593579874-63] WARN  org.eclipse.jetty.http.HttpParser - badMessage: 400 Illegal character 0x16 for HttpChannelOverHttp@956dfad{r=0,c=false,a=IDLE,uri=-}
+2016-05-27 09:58:32,798 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@4a8486c3{HTTP/1.1}{127.0.0.1:0}
+2016-05-27 09:58:32,818 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6f566cdc{/help,null,UNAVAILABLE}

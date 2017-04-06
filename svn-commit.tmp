@@ -1,0 +1,11 @@
+
+--This line, and those below, will be ignored--
+
+D    ST_RASSchemeGUI/bin
+D    ST_RASSchemeGUI/bins
+D    ST_RASSchemeGUI/miglayout-src.zip
+A  + ST_RASScheme/hibernate.cfg.xml
+A  + ST_RASScheme/server.policy
+D    ST_RASScheme/bin
+D    ST_RASScheme/bins
+D    ST_RASScheme.zip

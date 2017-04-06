@@ -1,0 +1,24 @@
+final TestSignalTimeout testSignalTimeout = new TestSignalTimeout(testAuxCtrlSignal);
+future = executor.submit(new Callable<Object>() {
+
+	@Override
+	public Object call() throws Exception {
+		// TODO Auto-generated method stub
+		TestWANClient stubTestWAN = new TestWANClient();
+		testSignalTimeout.setTestSignal(stubTestWAN.getStubTestWAN().diseableEnableActuatorSensor(testSignalTimeout.getTestSignal()));
+		return null;
+	}
+});
+
+try {
+	future.get(ras.interfaces.Utilities.TIMEOUT, TimeUnit.SECONDS);
+} catch (InterruptedException | TimeoutException | ExecutionException e) {
+	// TODO: handle exception
+	throw new Exception("CTSImpl diseableEnableActuatorSensor err: TIMEOUT "+e.getMessage());
+}
+
+
+
+
+
+SwitchClient stubSwitch = new SwitchClient(Components.SwitchActuator.toString());
